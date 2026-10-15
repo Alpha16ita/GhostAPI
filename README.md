@@ -1,5 +1,8 @@
 # GhostAC API
 
+[![Download on SpigotMC](https://img.shields.io/badge/Download-SpigotMC-ED8106?style=for-the-badge&logo=spigotmc&logoColor=white)](https://www.spigotmc.org/resources/nova-anticheat-java-bedrock-geyser-support.134592/)
+[![Join the Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/zdvaKxjShz)
+
 Public API for GhostAC. It contains only interfaces, a static facade and events, no detection code.
 GhostAC itself must be installed on the server for the API to work.
 
