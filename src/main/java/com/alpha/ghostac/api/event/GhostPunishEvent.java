@@ -6,6 +6,11 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
+/**
+ * Fired right before a ban, kick or command is applied. Cancelling it only stops the punishment,
+ * the flag and the violation level stay. It can fire again on the next flag above the threshold.
+ * Check isAsynchronous() before touching Bukkit.
+ */
 public class GhostPunishEvent extends Event implements Cancellable {
 
     private static final HandlerList HANDLERS = new HandlerList();

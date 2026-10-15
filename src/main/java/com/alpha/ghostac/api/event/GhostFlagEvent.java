@@ -6,6 +6,11 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
+/**
+ * Fired when GhostAC is about to register a flag. It can run asynchronously, so check
+ * isAsynchronous() before touching Bukkit. Cancelling it drops the flag completely:
+ * no violation level, no alert and no punishment.
+ */
 public class GhostFlagEvent extends Event implements Cancellable {
 
     private static final HandlerList HANDLERS = new HandlerList();
@@ -35,10 +40,12 @@ public class GhostFlagEvent extends Event implements Cancellable {
         return player;
     }
 
+    /** Name as shown in alerts, for example "Speed". Use this one with GhostAPI.getViolationLevel. */
     public String getCheckName() {
         return checkName;
     }
 
+    /** Lowercase internal name, for example "speed". */
     public String getCheck() {
         return check;
     }

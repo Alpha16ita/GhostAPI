@@ -38,6 +38,7 @@ public final class GhostAPI {
         return provider == null ? null : provider.getVersion();
     }
 
+    /** Duration is in milliseconds. */
     public static void exemptPlayer(Player player, long durationMs, String reason, ExemptionType... types) {
         GhostAPIProvider provider = provider();
         if (provider != null) {
@@ -95,6 +96,7 @@ public final class GhostAPI {
         }
     }
 
+    /** Pass the name from GhostFlagEvent.getCheckName(). Not case sensitive. */
     public static int getViolationLevel(Player player, String checkName) {
         GhostAPIProvider provider = provider();
         return provider == null || player == null || checkName == null ? 0
@@ -122,6 +124,7 @@ public final class GhostAPI {
         return provider == null ? Collections.emptySet() : provider.getCheckNames();
     }
 
+    /** Duration is in milliseconds. Names are not case sensitive. */
     public static void exemptChecks(Player player, long durationMs, String... checkNames) {
         GhostAPIProvider provider = provider();
         if (provider != null && player != null && checkNames != null && checkNames.length > 0) {
@@ -193,6 +196,7 @@ public final class GhostAPI {
         }
     }
 
+    /** COMBAT silences combat flags. ALL covers every type. */
     public enum ExemptionType {
         MOVEMENT,
         COMBAT,
