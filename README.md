@@ -143,4 +143,3 @@ String version = GhostAPI.getVersion();
 Plugin ghost = GhostAPI.getPlugin();
 ```
 
-`GhostAPI.init(Plugin)` is deprecated and does nothing, you do not need to call it.
