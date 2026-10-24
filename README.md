@@ -120,7 +120,7 @@ if (GhostAPI.isAvailable()) {
 - `getExemptionData` returns the active types, the longest remaining expiry and the reason of that exemption, or `null` if there is none.
 - `clearAllExemptions` drops every exemption for every player. `cleanupExpired` removes expired entries, GhostAC also ignores them on its own.
 
-Exemption merging and the `BLOCK` type need GhostAC 1.107.40 or newer. Older versions replace the previous exemption
+Exemption merging and the `BLOCK` type need GhostAC 2.00.00 or newer. Older versions replace the previous exemption
 and only apply `BLOCK` to some block checks.
 
 ## Violation data
