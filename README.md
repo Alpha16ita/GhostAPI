@@ -10,7 +10,7 @@ GhostAC itself must be installed on the server for the API to work.
 
 Java 21 or higher.
 
-API 1.1.0 needs GhostAC 1.104.00 or newer on the server. With an older GhostAC the new events and methods are not available and calling them throws a `NoSuchMethodError`. Check `GhostAPI.getVersion()` if your plugin has to support both.
+API 1.1.0 needs GhostAC v2.00.00 or newer on the server. With an older GhostAC the new events and methods are not available and calling them throws a `NoSuchMethodError`. Check `GhostAPI.getVersion()` if your plugin has to support both.
 
 ## Add the dependency (JitPack)
 
